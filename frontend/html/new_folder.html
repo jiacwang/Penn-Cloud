@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.container {
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+body {
+    background-color: #ECF0F1; 
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica , sans-serif;
+}
+
+h1   {
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-size: 34px;
+    color: #22313F;
+}
+
+h2   {
+    font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+    color: #6C7A89;
+    font-size: 21px;
+}
+
+p    {
+    color: #2C3E50;
+}
+
+input {
+    color: #6C7A89;
+}
+
+input[type=text], select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+textarea {
+    color: #6C7A89;
+    width: 30%;
+    height: 256px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+
+input[type=button], select {
+    width: 10%;
+    padding: 16px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 15px;
+    background-color: #F03434;
+    color: #ECF0F1;
+    text-align: center;
+}
+
+input:hover[type=button] {
+    background: #C83434;
+}
+
+hr {
+    width: 34%;
+}
+</style>
+</head>
+<div class="container">
+    <div class="center">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>NEW FOLDER</h1>
+        <hr>
+        <p>
+            <input name="name" type="text" id="folder_name" placeholder="folder">
+            <br>
+            <input type="button" name="close" id="close" value="CLOSE">
+            <input type="button" name="create" id="create" value="CREATE">
+        </p>
+        <hr>
+    </div>
+</div>
+
+<script type="text/javascript">
+    document.getElementById("close").onclick = function () {
+        window.location.href = "/drive.html";
+    };
+    document.getElementById("create").onclick = function () {
+        var new_name = document.getElementById("folder_name").value;
+        window.location.href = "/new_folder=" + new_name;
+    };
+</script>
+</html>

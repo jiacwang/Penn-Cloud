@@ -1,0 +1,11 @@
+</div>
+</div>
+</body>
+<script type="text/javascript">
+    
+    document.getElementById("next").onclick = function () {
+        window.location.href = "/next_slice";
+    };
+
+</script>
+</html>

@@ -1,0 +1,23 @@
+</div>
+</div>
+</body>
+<script type="text/javascript">
+    
+    function go_to_dir(elem) {
+        window.location.href = "/to_dir=" + elem.id;
+    }
+
+    function download(elem) {
+        window.location.href = "/download=" + elem.id;
+    }
+
+    document.getElementById("new folder").onclick = function () {
+        window.location.href = "/new_folder.html";
+    };
+
+    document.getElementById("upload").onclick = function () {
+        window.location.href = "/upload.html";
+    };
+
+</script>
+</html>

@@ -1,0 +1,15 @@
+</div>
+</div>
+</body>
+<script type="text/javascript">
+    
+    function go_to_db(elem) {
+        window.location.href = "/to_db=" + elem.id;
+    }
+
+    function kill_db(elem) {
+        window.location.href = "/kill=" + elem.id;
+    }
+
+</script>
+</html>

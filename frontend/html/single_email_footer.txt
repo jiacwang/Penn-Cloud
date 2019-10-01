@@ -1,0 +1,9 @@
+        <input type="button" name="close" id="close" value="CLOSE">
+	</div>
+</div>
+<script type="text/javascript">
+    document.getElementById("close").onclick = function() {
+        window.location.href = "/mail.html";
+    };
+</script>
+</html>

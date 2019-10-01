@@ -1,0 +1,5 @@
+user_1	PASSWORD:hello,1
+user_2	PASSWORD:hi,1
+user_3	PASSWORD:potato,12
+username	/:folder/
+,2	MBOX:,1	PASSWORD:password,1

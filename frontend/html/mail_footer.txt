@@ -1,0 +1,15 @@
+</div>
+</div>
+</body>
+<script type="text/javascript">
+    
+    document.getElementById("compose").onclick = function () {
+        window.location.href = "/compose.html";
+    };
+
+    function redirect_to_email_id(elem) {
+        var email_id = elem.getAttribute("id");
+        window.location.href = "/read_email:" + email_id;
+    }
+</script>
+</html>

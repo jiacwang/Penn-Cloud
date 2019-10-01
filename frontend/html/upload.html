@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style type="text/css">
+.container {
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+body {
+    background-color: #ECF0F1; 
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica , sans-serif;
+}
+
+h1   {
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-size: 34px;
+    color: #22313F;
+}
+
+h2   {
+    font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+    color: #6C7A89;
+    font-size: 21px;
+}
+
+p    {
+    color: #2C3E50;
+}
+
+input {
+    color: #6C7A89;
+}
+
+input[type=file], select {
+    display: inline-block;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #F03434;
+}
+
+input[type=text], select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+button[type=submit], select {
+    padding: 16px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid transparent;
+    font-size: 21px;
+    background-color: transparent;
+	color: #F03434;
+    text-align: center;
+}
+button:hover[type=submit], select {
+	color: #C83434;
+}
+
+hr {
+    width: 34%;
+}
+
+</style>
+  <meta charset="utf-8"/>
+  <title>upload</title>
+</head>
+<body>
+<div class="container">
+<div class="center">
+	<br>
+	<br>
+	<br>
+	<br>
+	<h1>UPLOAD</h1>
+	<hr>
+  <form method="post" enctype="multipart/form-data">
+<!--   <p><input type="text" name="text1" value="file name">
+ -->  <p><input type="file" name="file1">
+  	<hr>
+  <p><button type="submit">UPLOAD</button>
+</form>
+</div>
+</div>
+</body>
+</html>
